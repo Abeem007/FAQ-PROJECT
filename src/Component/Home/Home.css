@@ -1,0 +1,159 @@
+.home-bg{
+  background-image: url('src/assets/images/background-pattern-desktop.svg');
+  background-repeat: no-repeat;
+  height: 100vh; 
+  background-size:contain;
+ background-color: rgb(230, 221, 230);
+}
+
+.home__body-bg{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 24px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.0);
+    z-index: 1000;
+    border-radius: 15px;
+   
+}
+.home-header{
+  display: flex;
+  font-size: 1.4rem;
+  
+}
+.home-header img {
+  width: 40px;
+}
+.home__header-h1{
+margin-left: 1.5rem;
+font-weight: 880;
+}
+
+.home__body-link{
+  text-decoration: none;
+ 
+}
+ .home__body-link:hover {
+  text-decoration: none;
+}  
+
+.home__body-text{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.home__text-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  padding: 0.7rem 0 0.7rem 0; 
+  margin: 0.5rem; 
+ 
+}
+.home__text-content h4{
+padding-right: 1.5rem; 
+} 
+.home__text-content:hover {
+  color: purple;
+  text-decoration: none;
+  border: 1px solid rgb(226, 225, 225);
+  padding: 0.8rem;
+  border-radius: 50px;
+}
+
+.home__p{
+  padding: 0rem 0.6rem 0.8rem 0.8rem;
+  margin: 0.5rem;
+  line-height: 1.4rem;
+  font-size: 0.9rem;
+}
+.home__img-btn{
+  border: none;
+  cursor: pointer;
+  visibility: hidden;
+} 
+.home-img{
+  visibility: visible;
+  max-width: 30px;
+  max-height: 31px;
+}
+
+@media screen  and (max-width:1200px) {
+  .home__body-bg{
+    padding: 0.7rem;
+    margin: 1.2rem ;
+  }
+
+   .home-header {
+    padding: 1rem 1rem 0rem 1rem;
+    }
+  .home__body-text{
+    padding: 0rem;
+    font-size: 0.8rem;
+  }
+  
+ .home__p{
+  font-size: 0.8rem;
+ }
+   .home__body-bg {
+    margin: 0;
+    top: 39%;
+    padding: 1.5rem;
+  } 
+}
+    /* @media  screen and (max-width:1024px), screen and (max-height:1000px){
+  .home__body-bg {
+    top:35%;
+    }
+};      */
+@media screen and (max-width:900px) {
+.home-header img{
+width: 30px;
+}
+
+  .home-header h1{
+ font-size: 1.6rem;
+ }
+ 
+  .home__text-content h4{
+  font-size: 0.8rem;
+ }
+ .home-img{
+  width: 25px;
+  height: 26px;
+ } 
+ .home__body-bg {
+   margin: 0;
+   top: 25%;
+   
+   padding-left: 1.2rem;
+   padding-right: 1.2rem;
+  
+     }
+} 
+
+@media screen and (max-width:550px) {
+  
+  .home-bg{
+  max-height: 100vh;
+  
+  }
+  
+  .home__body-bg{
+     width: 70%; 
+     /* height: 60%; */ 
+    top: 28%;
+  }
+}
+@media screen and (max-width:375px){
+.home__body-bg {
+    width: 70%;
+    /* height: 60%; */
+    top: 31%;
+  }
+}
